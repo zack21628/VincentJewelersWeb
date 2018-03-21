@@ -1,0 +1,447 @@
+/* Website template by freewebsitetemplates.com */
+/*------------------------- Layout styles ------------------------*/ 
+html,body
+{
+  width: 100% ;
+  height: 100% ;
+  margin: 0px ;
+  padding: 0px ;
+  overflow-x: hidden ; 
+}
+
+@media only screen and (max-width: 629px) {
+	html, body{
+		width:100% ;
+		overflow-x: hidden ;
+	}
+}
+
+body{
+	margin:0 ;
+	background:url(../images/bg-body.jpg);
+}
+#page{
+	background:url(../images/bg-body.jpg) no-repeat center top;
+}
+
+/*------------------------- Font ------------------------*/ 
+@font-face {
+  font-family: 'RokkittRegular' ;
+  src: url('rokkitt-regular-webfont.eot') ;
+  src: url('rokkitt-regular-webfont.eot?#iefix') format('embedded-opentype'),
+     url('rokkitt-regular-webfont.woff') format('woff'),
+     url('rokkitt-regular-webfont.ttf') format('truetype'),
+     url('rokkitt-regular-webfont.svg#RokkittRegular') format('svg') ;
+  font-weight: normal ;
+  font-style: normal ;
+}
+
+/*------------------------- Header ------------------------*/ 
+#header{
+	background:url(../images/bg-body.jpg) no-repeat center 110px ;
+	width: 60% ;
+	padding: 0 1% 0 ;
+	margin: 0 auto ;
+}
+#header a#header_logo{
+	display: block ;
+	padding: 0 auto 10px ;
+	margin: 0 auto 10px ;
+}
+#header #header_img{
+	display: block ;
+	padding: 5px ;
+	margin: auto ;
+	width: 80% ; 
+}
+@media only screen and (max-width: 629px) {
+	#header {
+		background-color: none ;
+		float: none ;
+		width: 97% ;
+		padding: 0 1% ;
+		height: 75% ;
+		margin: 0 ;
+	}
+	#header a#header_logo {
+		padding: 0 auto ; 
+		margin: 0 auto ; 
+	}
+	#header #header_img {
+		display: block ;
+		padding: 2% 2% ;
+		margin: auto ;
+		width: 96% ; 
+	}
+	#header .header_break {
+		display: none;
+	}
+}
+@media only screen and (max-width: 849px) {
+	#header{
+		width: 80% ;
+	}
+}
+
+/*------------------------- Navigation ------------------------*/ 
+#nav{
+	color: #000 ;
+	text-align: center ;
+	padding:0 2% ;
+	width: 95% ;
+	overflow:hidden ;
+	margin:0 auto ;
+	background:url(../images/bg-body.jpg) no-repeat;
+}
+#nav .menu_label{
+	display: none ;
+}
+#nav .menu_icon{
+	display: none ;
+}
+#nav .nav_table{
+	display: table ;  /* Allow the centering to work */
+	margin: 0 auto;
+	padding: 0 2.5% ;
+	width: 90% ;
+}
+#nav ul{
+	list-style: none ;
+	list-style-type: none;
+	text-align: center ;
+	padding: 0 ;
+	margin: 0 ;
+	width: 100% ;
+	white-space: nowrap;
+}
+#nav ul li{
+	display: inline ;
+	height: 40px ;
+	line-height: 40px ;
+	/* border-bottom: 1px solid #888 ; */
+	margin-right: -4px ;
+	font-size: 100% ;
+	/* width: 10%; */
+}
+#nav a{
+	background-color: inherit ;
+	text-decoration: none ;
+	color: #000 ;
+	padding:0 2.5%;
+	transition: .4s background-color ;
+}
+#nav a:hover {
+	color: #fff ;
+	background-color: #005f5f ;
+}
+#nav a.active {
+ background-color: #000 ;
+ color: #fff ;
+ cursor: default ;
+}
+@media only screen and (max-width: 849px) and (min-width: 630px){
+	#nav{
+		text-align: center ;
+		padding:0 2% ;
+		width: 95% ;
+		overflow:hidden ;
+		margin:0 auto ;
+		background:url(../images/bg-body.jpg) no-repeat;
+	}
+}
+@media only screen and (max-width: 629px) {
+	#nav{
+		color: #000 ;
+		text-align: center ;
+		padding:0 ;
+		overflow: hidden ;
+		margin: auto ;
+		background: none ;
+		float: left ;
+		width: 40px ;
+		/* min-width:  ; */
+		/* max-width:  ; */
+		height: 400px ;
+	}
+	#nav .menu_wrapper{
+		width: 75% ;
+		height: 33px ;
+		margin: 5px ;
+	}
+	#nav .menu_icon{
+		display: block ;
+		width: 33px ;
+		height: 3px ;
+		background-color: black ;
+		margin: 6px auto ;
+	}
+	#nav .menu_label{
+		margin: 0 auto;
+		display: inline-block ;
+		padding-bottom: 1px ;
+		font-size: 3.5vw;
+		width: auto ;
+	}
+	#nav .nav_table{
+		background:url(../images/bg-body.jpg) ;
+		display: none ;
+		width: 45% ;
+		margin: -5px 0 0 ;
+		padding: 0 0 2px ;
+		position: absolute ;
+		z-index: 100 ;
+		left: 5px ;
+		top: 100px;
+		border: 3px outset green ;
+	}
+	#nav ul{
+		list-style: none ;
+		text-align: center ;
+		padding: 0 ;
+		margin: 0 ;
+	}
+	#nav ul li{
+		background-color: inherit ;
+		display: block ;
+		font-size: 1.2em ;
+		line-height: 40px ;
+		height: 40px ;
+		margin: 0 ;
+		border-bottom: 1px solid #888 ;
+		white-space: nowrap ;
+	}
+	#nav a{
+		text-decoration: none ;
+		color: #000 ;
+		padding: 0 ;
+		transition: .4s background-color ;
+	}
+	#nav a:hover {
+		color: #fff ;
+		background-color: #005f5f ;
+	}
+	#nav a.active {
+	 background-color: #000 ;
+	 color: #fff ;
+	 cursor: default ;
+	}
+}
+
+/*------------------------- Body ------------------------*/ 
+#main_content{
+	margin:0 auto ;
+	padding:0 5% ;
+	overflow:hidden ;
+	width: 60% ;
+}
+@media only screen and (max-width: 849px) and (min-width: 630px){
+	#main_content{
+		width: 80% ;
+	}
+}
+@media only screen and (max-width: 629px) {
+	#main_content{
+		float: right ;
+		width: 80% ;
+		padding: 5px 2% ;
+	}
+	#main_content div#featured h1 {
+		margin: 2% 2% ;
+	}
+}
+#main_content div#featured{ 
+	padding:0 2% 17px ;
+	/* overflow: hidden; */
+}
+
+#main_content div#featured h3{
+	color:#f78117 ;
+	font-size:36px ;
+	font-family: 'RokkittRegular' ;
+	margin:0 0 30px ;
+	width:490px ;
+	padding:100px 0 0 ;
+	font-weight:normal ;
+}
+#main_content div#featured p{
+	width:100% ;
+	color:#5d5d5d ;
+		font-family: 'RokkittRegular' ;
+	font-size:16px ;
+	line-height:25px ;
+	text-shadow: 0 1px 0 #fcfcfc ;
+	text-align:justify ;
+	margin:0 ;
+}
+#main_content div#featured img.store-front{
+	float: right ;
+	height: 50% ;
+	width: 50% ;
+	margin: auto ;
+	padding: 0.5% 0 10px 2%;
+}
+#view_btn{
+	background:url(../images/interface.jpg) no-repeat ;
+	border:0 ;
+	height:48px ;
+	width:216px ;
+	font-family: 'RokkittRegular' ;
+	font-size:30px ;
+	display: block ;
+	margin: 10px auto ;
+	cursor:pointer ;
+	outline:none ;
+}
+#main_content h3{
+	font-family: 'RokkittRegular' ;
+	font-size:16px ;
+	font-weight:bold ;
+	color:#636363 ;
+	margin:15px 0 0 ;
+	line-height:21px ;
+}
+#main_content p{
+	font-family: 'RokkittRegular' ;
+	font-size:16px ;
+	text-align:justify ;
+	color:#636363 ;
+	margin:0 0 20px ;
+	line-height:21px ;
+}
+#main_content p a{
+	outline:none ;
+	color:#636363 ;
+}
+
+/*------------------------- Footer ------------------------*/ 
+#footer{
+	width:60%	;
+	background:url(../images/bg-footer.jpg) no-repeat center top ;
+	padding:65px 10px 207px ;
+	margin:0 auto ;
+	overflow:hidden ;
+}
+@media only screen and (max-width: 849px) {
+	#footer{
+		width: 80% ;
+	}
+}
+/*
+#footer ul{
+	list-style:none ;
+	margin:0 0 0 60px ;
+	padding:0 ;
+	overflow:hidden ;
+	float:left ;
+}
+#footer ul li:first-child a{
+	border:none ;
+	padding:0 6px 0 0 ;
+}
+#footer ul li{
+	float:left ;
+}
+#footer ul li a:hover{
+	color:#F78117 ;
+}
+#footer ul li a{
+	border-width: 1px ;
+	border-color:#5b5b5b ;
+	border-style: none none none solid ;
+	color:#5b5b5b ;
+	font-size:10px ;
+	font-family: Trebuchet MS ;
+	text-decoration:none ;
+	font-weight:bold ;
+	padding:0 6px ;
+	outline:none ;
+}
+*/
+#footer p{
+	color:#5b5b5b ;
+	font-size:10px ;
+	font-family: Trebuchet MS ;
+	font-weight:bold ;
+	float:left ;
+	margin:6px 0 0 135px ;
+}
+#footer div.connect{
+	float:left ;
+	margin:0 0 0 92px ;
+}
+#footer div.connect a{
+	float:left ;
+	outline:none ;
+}
+#footer div.connect a img{
+	width:40px ;
+	height:40px ;
+	padding:0 20px ;
+	display:block ;
+	text-indent:-9999px ;
+	
+	/* background:url(../images/FB-fLogo.png) no-repeat ; */
+}
+#footer div.connect a#instagram img{
+	width:40px ;
+	height:40px ;
+	display:block ;
+	text-indent:-9999px ;
+	/* background:url(../images/insta-logo.png) no-repeat ; */
+}
+
+}
+/*------------------------- From Original Site ------------------------*/ 
+#innertube  {
+	text-align: center ;
+	padding: 0 ;
+}
+table#featured_items_table {
+	background-color: white ;
+	display: table ;
+	table-layout: auto ;
+	margin:0 auto ;
+  /* width: 1000px ; */
+	border-collapse:collapse ;
+}
+table#featured_items_table td {
+	padding: 20px ;
+}
+.innertube1 {
+	background-color: white ;
+	background-attachment: fixed ; padding-right:1em ;
+	margin-left:1em ; 
+}
+.innertube2 { 
+	padding-right:1em ;
+	padding-left: 100px ;
+	width:auto
+}
+img.expando3 {
+	border: none ;
+	vertical-align: top ; /*top aligns image, so mouse has less of a change of moving out of image while image is expanding*/
+	height: 100px ;
+	width: auto ;
+}
+
+/* new */
+.slider_wrapper {
+	text-align: center;
+	padding: 10px 0 0;
+	margin: 0 auto;
+	max-width: 500px; 
+} 
+@media only screen and (max-width: 629px) {
+	.slider_wrapper   {
+		text-align: center;
+		padding: 10px 0 0;
+		margin: 0 auto;
+		width: 100%; 
+	}
+	.slider_wrapper img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+}
+	

@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Selleri Lab Members</title>
+	<link href="style.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="contentslider.js"></script>
+<style type="text/css">
+<!--
+.style1 {color: #FFFFFF; background-image:url(header2s.png); background-repeat:repeat-y; }
+-->
+</style>
+</head>
+
+<body class="twoColElsLtHdr" bgcolor="#CCCCCC">
+
+<div id="container">
+<div id="menu" class="center"><h3>Rings</h3>
+  				<ul class="left">
+				<li><a href="../files/ringsa.html">Red stones</a></li>
+                <li>Ruby, garnet, ... </li>
+                <li>&nbsp;</li>
+		 		<li><a href="../files/ringsb.html">Blue stones</a></li>
+                <li>Sapphire, ...</li>
+                <li>&nbsp;</li>
+	 			<li><a href="../files/ringsc.html">Green stones</a></li>
+                <li>Emerald, </li>
+                <li>&nbsp;</li>
+	 			<li><a href="../files/ringsd.html">Pearls and stones</a></li>
+                <li>Pearls and opaque stones</li>
+                <li>&nbsp;</li>
+		 		<li><a href="../files/ringse.html">Metal</a></li>
+                <li>Gold or silver rings</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+				<li><a href="../index.html">Home</a></li>
+				</ul>
+<!-- end #menu --></div>
+
+  <div id="mainContent">
+  	<div id="slider2" class="sliderwrapper">
+			<div class="contentdiv"><br /><img src="../images/seventythreeA_S.jpg" title="Red Stones" alt="Ruby and Diamonds" height="400" />
+			</div>
+			<div class="contentdiv" align="center"><br /><img src="../images/fiftyeightA_S.jpg" title="Necklace" alt="Red stone necklace" height="400" /></div>
+            <div class="contentdiv" align="right"><br /><img src="../images/elevenA_S.jpg" title="Necklace" alt="Red stone necklace" height="400" /></div>
+            <div class="contentdiv" align="center"><br /><img src="../images/sixtysevenA_S.jpg" title="Necklace" alt="Red stone necklace" height="400" /></div>
+            <div class="contentdiv" align="left"><br /><img src="../images/seventyfourA_S.jpg" title="Necklace" alt="Red stone necklace" height="400" /></div>
+			</div><!--sliderwrapper-->
+			<div id="paginate-slider2" class="pagination">
+			<h3 align="center">Necklaces, rings, pins, and other jewelry with red stones.</h3>
+			<a href="#" class="prev"><img src="../images/back.png" border="0" alt="" /></a>&nbsp;&nbsp;<a href="#" class="next"><img src="../images/forward.png" border="0" alt="" /></a>
+			</div><!--paginate-slider2-->		
+			<script type="text/javascript">
+	featuredcontentslider.init({
+	id: "slider2",  //id of main slider DIV
+	contentsource: ["inline", ""],  //Valid values: ["inline", ""] or ["ajax", "path_to_file"]
+	toc: "markup",  //Valid values: "#increment", "markup", ["label1", "label2", etc]
+	nextprev: ["Previous", "Next"],  //labels for "prev" and "next" links. Set to "" to hide.
+	revealtype: "click", //Behavior of pagination links to reveal the slides: "click" or "mouseover"
+	enablefade: [true, 0.2],  //[true/false, fadedegree]
+	autorotate: [false, 3000],  //[true/false, pausetime]
+	onChange: function(previndex, curindex){  //event handler fired whenever script changes slide
+		//previndex holds index of last slide viewed b4 current (1=1st slide, 2nd=2nd etc)
+		//curindex holds index of currently shown slide (1=1st slide, 2nd=2nd etc)
+	}
+	})
+					</script>
+	<!-- end #mainContent --></div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+<!-- end #container --></div>
+</body>
+</html>

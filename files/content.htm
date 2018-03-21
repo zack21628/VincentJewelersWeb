@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+<title>Vincent Jewelers of Milford Connecticut</title>
+<link href="../files/style.css" rel="stylesheet" type="text/css" media="all" />
+	
+	<script type="text/javascript">
+<!--
+/***********************************************
+* Tabbed Document Viewer script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var selectedtablink=""
+var tcischecked=false
+
+function handlelink(aobject){
+selectedtablink=aobject.href
+tcischecked=(document.tabcontrol && document.tabcontrol.tabcheck.checked)? true : false
+if (document.getElementById && !tcischecked){
+var tabobj=document.getElementById("tablist")
+var tabobjlinks=tabobj.getElementsByTagName("A")
+for (i=0; i<tabobjlinks.length; i++)
+tabobjlinks[i].className=""
+aobject.className="current"
+document.getElementById("tabiframe").src=selectedtablink
+return false
+}
+else
+return true
+}
+
+function handleview(){
+tcischecked=document.tabcontrol.tabcheck.checked
+if (document.getElementById && tcischecked){
+if (selectedtablink!="")
+window.location=selectedtablink
+}
+}
+function resizeWindow()
+{
+parent.resizeTo(980,810);
+}
+-->
+</script>
+</head>
+<body background="../images/bgTwo.jpg" class="twoColElsLtHdr" onload="resizeWindow()">
+<div id="container2">
+<ul id="tablist" class="left">
+<li><a class="current" href="../files/home.html" onclick="return handlelink(this)">Home</a></li>
+<li><a href="../files/featured_items.html" onclick="return handlelink(this)">Featured Items</a></li>
+<li><a href="../files/gallery.html" onclick="return handlelink(this)">Gallery</a></li>
+<li><a href="../files/services.html" onclick="return handlelink(this)">Services</a></li>
+<li><a href="../files/location.html" onclick="return handlelink(this)">Location</a></li>
+<li><a href="../files/history.html" onclick="return handlelink(this)">History</a></li>
+</ul>
+<iframe frameborder="0" id="tabiframe" src="home.html" align="middle" height="600px" width="99%"></iframe>
+</div>
+</body>
+</html>

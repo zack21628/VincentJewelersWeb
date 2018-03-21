@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Vincent Jewelers</title>
+	<link href="style.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="contentslider.js"></script>
+	<script  type="text/javascript" src="newWindow.js"></script>
+<style type="text/css">
+<!--
+.style1 {color: #FFFFFF; background-image:url(header2s.png); background-repeat:repeat-y; }
+-->
+</style>
+</head>
+
+<body class="twoColElsLtHdr" bgcolor="#CCCCCC">
+
+<div id="container1">
+		<div id="menu1">
+  				<ul class="left" >
+				<li>&nbsp;</li>
+				<li><a href="../files/red.html"><img src="../images/red.png"  /></a></li>
+                <li>&nbsp;</li>
+		 		<li><a href="../files/blue.html"><img src="../images/blue.png"  /></a></li>
+                <li>&nbsp;</li>
+	 			<li><a href="../files/green.html"><img src="../images/green.png"  /></a></li>
+                <li>&nbsp;</li>
+	 			<li><a href="../files/pearl.html"><img src="../images/white.png"  /></a></li>
+                <li>&nbsp;</li>
+		 		<li><a href="../files/gold.html"><img src="../images/opaque.png"  /></a></li>
+                <li>&nbsp;</li>
+				<li><a href="../files/all.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/alljewelry.png" /></a></li>
+                <li>&nbsp;</li>
+                </ul>
+		</div>
+  <div id="mainContent1">
+  	<div id="slider2" class="sliderwrapper">
+			<!--Image1-->
+            <div class="contentdiv" align="center"><br /><a href="javascript:OpenNewWindow('../files/eight.html')"><img src="../images/eightA_T.jpg" title="Blue" alt="Sapphire and Diamonds" height="400" /></a>
+            </div>
+            <!--Image1-->
+            <div class="contentdiv" align="left"><br /><a href="javascript:OpenNewWindow('../files/fiftynine.html')"><img src="../images/fiftynineA_T.jpg" title="Blue" alt="Drusy Chrysocolla Pendant" height="400" /></a>
+            </div>
+            <!--Image1-->
+            <div class="contentdiv" align="center"><br /><a href="javascript:OpenNewWindow('../files/sixtyone.html')"><img src="../images/sixtyoneA_T.jpg" title="Blue" alt="Sapphire and Diamonds" height="400" /></a>
+            </div>
+			<!--Image2-->
+            <div class="contentdiv" align="right"><br /><a href="javascript:OpenNewWindow('../files/fortyeight.html')"><img src="../images/fortyeightA_S.jpg" title="Necklace" alt="Red stone necklace" height="400" /></a>
+            </div>
+            <!--Image3-->
+			<div class="contentdiv" align="center"><br /><a href="javascript:OpenNewWindow('../files/sixtyfive.html')"><img src="../images/sixtyfiveA_T.jpg" title="Necklace" alt="Red stone necklace" height="400" /></a>
+			</div>
+            <!--Image4-->
+			<div class="contentdiv" align="right"><br /><a href="javascript:OpenNewWindow('../files/sixtynine.html')"><img src="../images/sixtynineA_T.jpg" title="Necklace" alt="blue stone necklace" height="400" /></a>
+            </div>
+            <!--Image5-->
+			<div class="contentdiv" align="center"><br /><a href="javascript:OpenNewWindow('../files/four.html')"><img src="../images/fourA_T.jpg" title="Necklace" alt="blue stone bracelet" height="400" /></a></div>
+            <!--Image6-->
+            <div class="contentdiv" align="left"><br /><a href="javascript:OpenNewWindow('../files/five.html')"><img src="../images/fiveA_T.jpg" title="Necklace" alt="blue stone bracelet" height="400" /></a>
+            </div>
+			<!--Image7-->
+            <div class="contentdiv" align="center"><br /><a href="javascript:OpenNewWindow('../files/fiftysix.html')"><img src="../images/fiftysixA_T.jpg" title="Necklace" alt="blue stone bracelet" height="400" /></a>
+            </div>
+			</div><!--sliderwrapper-->
+			<div id="paginate-slider2" class="pagination">			
+			<div class="leftimage"><a href="#" class="prev"><img src="../images/back.png" height="100" border="0" alt="" align="left" /></a></div>
+            <div class="center" align="center"><img src="../images/scroll.png" /></div>
+			<div class="rightimage"><a href="#" class="next"><img src="../images/forward.png" border="0" alt="" align="right" height="100" /></a></div>			
+			</div><!--paginate-slider2-->		
+			<script type="text/javascript">
+	featuredcontentslider.init({
+	id: "slider2",  //id of main slider DIV
+	contentsource: ["inline", ""],  //Valid values: ["inline", ""] or ["ajax", "path_to_file"]
+	toc: "markup",  //Valid values: "#increment", "markup", ["label1", "label2", etc]
+	nextprev: ["Previous", "Next"],  //labels for "prev" and "next" links. Set to "" to hide.
+	revealtype: "click", //Behavior of pagination links to reveal the slides: "click" or "mouseover"
+	enablefade: [true, 0.2],  //[true/false, fadedegree]
+	autorotate: [false, 3000],  //[true/false, pausetime]
+	onChange: function(previndex, curindex){  //event handler fired whenever script changes slide
+		//previndex holds index of last slide viewed b4 current (1=1st slide, 2nd=2nd etc)
+		//curindex holds index of currently shown slide (1=1st slide, 2nd=2nd etc)
+	}
+	})
+					</script>
+	<!-- end #mainContent --></div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+<!-- end #container --></div>
+</body>
+</html>
