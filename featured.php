@@ -1,7 +1,7 @@
 <?php
 	include('header_new.php');
 ?>
-		<script>$('.nav_table ul a:eq(1)').addClass("active")</script>
+	<script>$('.nav_table ul a:eq(1)').addClass("active")</script>
 		<div id="main_content">
 			<div id="featured">
 				<div class="slider_wrapper">

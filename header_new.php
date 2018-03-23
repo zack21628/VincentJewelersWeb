@@ -7,16 +7,14 @@
 <meta name="author" content="Vincent Jewelers" />
 <meta name="viewport" content="width=device-width" />
 <title>Vincent Jewelers of Miford,CT</title>
-
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="lightslider-master/src/js/lightslider.js"></script>
 <script src="lightGallery-master/src/js/lightGallery.js"></script>
 <script src="scripts/jq-scripts.js"></script>
 <link rel="stylesheet" href="css/style-main.css" type="text/css" />
 <link rel="shortcut icon" href="images/favicon.ico">
-<link type="text/css" rel="stylesheet" href="lightGallery-master/src/css/lightGallery.css" />    
-<link type="text/css" rel="stylesheet" href="lightslider-master/src/css/lightslider.css" />                                
-
+<link type="text/css" rel="stylesheet" href="lightGallery-master/src/css/lightGallery.css" />
+<link type="text/css" rel="stylesheet" href="lightslider-master/src/css/lightslider.css" />
 <!--
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 -->
@@ -36,9 +34,9 @@
 					<ul>
 						<a href="index.php"><li>Home</li></a>
 						<a href="featured.php"><li>Featured Items</li></a>
-						<a href="services.html"><li>Gallery</li></a>
-						<a href="index.html"><li>Services</li></a>
-						<a href="index.html"><li>Location</li></a>
+						<a href="gallery.html"><li>Gallery</li></a>
+						<a href="services.php"><li>Services</li></a>
+						<a href="location.php"><li>Location</li></a>
 						<a href="index.html"><li>History</li></a>
 					</ul>
 				</div>
