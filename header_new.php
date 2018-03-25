@@ -32,12 +32,12 @@
 				</div>
 				<div class="nav_table">
 					<ul>
-						<a href="index.php"><li>Home</li></a>
-						<a href="featured.php"><li>Featured Items</li></a>
-						<a href="gallery.html"><li>Gallery</li></a>
-						<a href="services.php"><li>Services</li></a>
-						<a href="location.php"><li>Location</li></a>
-						<a href="index.html"><li>History</li></a>
+						<a class="nav_links" href="index.php"><li>Home</li></a>
+						<a class="nav_links" href="featured.php"><li>Featured Items</li></a>
+						<a class="nav_links" href="gallery.html"><li>Gallery</li></a>
+						<a class="nav_links" href="services.php"><li>Services</li></a>
+						<a class="nav_links" href="location.php"><li>Location</li></a>
+						<!-- <a class="nav_links" href="index.html"><li>History</li></a> -->
 					</ul>
 				</div>
 			</div>

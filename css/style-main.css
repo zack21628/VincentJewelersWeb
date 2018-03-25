@@ -58,20 +58,27 @@ body{
 	#header {
 		background-color: none ;
 		float: none ;
-		width: 97% ;
+		width: 100% ;
 		padding: 0 1% ;
-		height: 75% ;
+		/* height: 75% ; */
+		height: 55px ;
 		margin: 0 ;
 	}
 	#header a#header_logo {
-		padding: 0 auto ; 
+		padding: 0 auto ;
+		/* padding-top: 5px;		 */
 		margin: 0 auto ; 
+		float: right;	
+		width: 80%;
+		
 	}
 	#header #header_img {
 		display: block ;
 		padding: 2% 2% ;
 		margin: auto ;
-		width: 96% ; 
+		width: auto ; 
+		max-width: 285px;
+		height: 45px
 	}
 	#header .header_break {
 		display: none;
@@ -149,6 +156,7 @@ body{
 		background:url(../images/bg-body.jpg) no-repeat;
 	}
 }
+
 @media only screen and (max-width: 629px) {
 	#nav{
 		color: #000 ;
@@ -158,29 +166,28 @@ body{
 		margin: auto ;
 		background: none ;
 		float: left ;
-		width: 40px ;
-		/* min-width:  ; */
-		/* max-width:  ; */
-		height: 400px ;
+		width: 15% ;
+		/* height: 75% ; */
+		height: 55px; 
 	}
 	#nav .menu_wrapper{
-		width: 75% ;
-		height: 33px ;
-		margin: 5px ;
+		width: 90% ;
+		height: 50px ;
+		margin-top: 5px;
 	}
 	#nav .menu_icon{
 		display: block ;
-		width: 33px ;
+		width: 80%;
 		height: 3px ;
 		background-color: black ;
-		margin: 6px auto ;
+		margin: 5px auto ;
 	}
 	#nav .menu_label{
 		margin: 0 auto;
 		display: inline-block ;
-		padding-bottom: 1px ;
-		font-size: 3.5vw;
-		width: auto ;
+		/* padding-bottom: 1px ; */
+		font-size:3.5vw;
+		width: 100% ;
 	}
 	#nav .nav_table{
 		background:url(../images/bg-body.jpg) ;
@@ -233,21 +240,6 @@ body{
 	padding:0 5% ;
 	overflow:hidden ;
 	width: 60% ;
-}
-@media only screen and (max-width: 849px) and (min-width: 630px){
-	#main_content{
-		width: 80% ;
-	}
-}
-@media only screen and (max-width: 629px) {
-	#main_content{
-		float: right ;
-		width: 80% ;
-		padding: 5px 2% ;
-	}
-	#main_content div#featured h1 {
-		margin: 2% 2% ;
-	}
 }
 #main_content div#featured{ 
 	padding:0 2% 17px ;
@@ -311,6 +303,25 @@ body{
 #main_content p a{
 	outline:none ;
 	color:#636363 ;
+}
+@media only screen and (max-width: 849px) and (min-width: 630px){
+	#main_content{
+		width: 80% ;
+	}
+}
+@media only screen and (max-width: 629px) {
+	#main_content{
+		float: right ;
+		width: 100% ;
+		padding: 5px 0 ;
+	}
+	#main_content div#featured {
+		margin: 0;
+		padding: 0 1%;
+	}
+	#main_content div#featured h1 {
+		margin: 2% 2% ;
+	}
 }
 
 /*------------------------- Footer ------------------------*/ 
@@ -429,7 +440,9 @@ img.expando3 {
 	text-align: center;
 	padding: 10px 0 0;
 	margin: 0 auto;
-	max-width: 500px; 
+	max-width: 500px;
+	height: 500px ;
+	max-height: 500px;
 } 
 @media only screen and (max-width: 629px) {
 	.slider_wrapper   {
@@ -552,8 +565,11 @@ img.expando3 {
 	font-weight: 500;
 	padding: 6px 12px;
 }
-
-
+@media only screen and (max-width: 629px) {
+	.pac-card {
+		width: 75%;
+	}
+}
 
 /*------------------------- Services ------------------------*/ 
 #main_content div#featured #service_list h2{

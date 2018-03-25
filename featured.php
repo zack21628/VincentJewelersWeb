@@ -6,41 +6,41 @@
 			<div id="featured">
 				<div class="slider_wrapper">
 					<ul id="imageGallery">
-						<li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-1.jpg" data-src="http://sachinchoolur.github.io/lightslider/img/cS-1.jpg">
-							<img src="http://sachinchoolur.github.io/lightslider/img/cS-1.jpg" />
+						<li data-thumb="images/featured/thumbs/fiftyA_T.jpg" data-src="images/featured/fiftyA_S.jpg">
+							<img src="images/featured/fiftyA_S.jpg" />
 						</li>
-						<li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-2.jpg" data-src="http://sachinchoolur.github.io/lightslider/img/cS-2.jpg">
-							<img src="http://sachinchoolur.github.io/lightslider/img/cS-2.jpg" />
+						<li data-thumb="images/featured/thumbs/sixtyAb_T.jpg" data-src="images/featured/sixtyAb_S.jpg">
+							<img src="images/featured/sixtyAb_S.jpg" />
 						</li>
-						<li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-3.jpg" data-src="http://sachinchoolur.github.io/lightslider/img/cS-3.jpg">
-							<img src="http://sachinchoolur.github.io/lightslider/img/cS-3.jpg" />
+						<li data-thumb="images/featured/thumbs/fortysevenA_T.jpg" data-src="images/featured/fortysevenA_S.jpg">
+							<img src="images/featured/fortysevenA_S.jpg" />
 						</li>
-						<li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-4.jpg" data-src="http://sachinchoolur.github.io/lightslider/img/cS-4.jpg">
-							<img src="http://sachinchoolur.github.io/lightslider/img/cS-4.jpg" />
+						<li data-thumb="images/featured/thumbs/sixtyoneA_T.jpg" data-src="images/featured/sixtyoneA_Sa.jpg">
+							<img src="images/featured/sixtyoneA_Sa.jpg" />
 						</li>
-						<li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-5.jpg" data-src="http://sachinchoolur.github.io/lightslider/img/cS-5.jpg">
-							<img src="http://sachinchoolur.github.io/lightslider/img/cS-5.jpg" />
+						<li data-thumb="images/featured/thumbs/eighteenA_T.jpg" data-src="images/featured/eighteenA_S.jpg">
+							<img src="images/featured/eighteenA_S.jpg" />
 						</li>
-						<li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-6.jpg" data-src="http://sachinchoolur.github.io/lightslider/img/cS-6.jpg">
-							<img src="http://sachinchoolur.github.io/lightslider/img/cS-6.jpg" />
+						<li data-thumb="images/featured/thumbs/elevenA_T.jpg" data-src="images/featured/elevenA_S.jpg">
+							<img src="images/featured/elevenA_S.jpg" />
 						</li>
-						<li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-7.jpg" data-src="http://sachinchoolur.github.io/lightslider/img/cS-7.jpg">
-							<img src="http://sachinchoolur.github.io/lightslider/img/cS-7.jpg" />
+						<li data-thumb="images/featured/thumbs/seventeenA_T.jpg" data-src="images/featured/seventeenA_S.jpg">
+							<img src="images/featured/seventeenA_S.jpg" />
 						</li>
-						<li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-8.jpg" data-src="http://sachinchoolur.github.io/lightslider/img/cS-8.jpg">
-							<img src="http://sachinchoolur.github.io/lightslider/img/cS-8.jpg" />
+						<li data-thumb="images/featured/thumbs/thirtyA_T.jpg" data-src="images/featured/thirtyA_S.jpg">
+							<img src="images/featured/thirtyA_S.jpg" />
 						</li>
-						<li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-9.jpg" data-src="http://sachinchoolur.github.io/lightslider/img/cS-9.jpg">
-							<img src="http://sachinchoolur.github.io/lightslider/img/cS-9.jpg" />
+						<li data-thumb="images/featured/thumbs/seventyfiveA_T.jpg" data-src="images/featured/seventyfiveA_S.jpg">
+							<img src="images/featured/seventyfiveA_S.jpg" />
 						</li>
-						<li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-10.jpg" data-src="http://sachinchoolur.github.io/lightslider/img/cS-10.jpg">
-							<img src="http://sachinchoolur.github.io/lightslider/img/cS-10.jpg" />
+						<li data-thumb="images/featured/thumbs/twentythreeA_T.jpg" data-src="images/featured/twentythreeA_S.jpg">
+							<img src="images/featured/twentythreeA_S.jpg" />
 						</li>
-						<li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-11.jpg" data-src="http://sachinchoolur.github.io/lightslider/img/cS-11.jpg">
-							<img src="http://sachinchoolur.github.io/lightslider/img/cS-11.jpg" />
+						<li data-thumb="images/featured/thumbs/thirteenA_T.jpg" data-src="images/featured/thirteenA_S.jpg">
+							<img src="images/featured/thirteenA_S.jpg" />
 						</li>
-						<li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-12.jpg" data-src="http://sachinchoolur.github.io/lightslider/img/cS-12.jpg">
-							<img src="http://sachinchoolur.github.io/lightslider/img/cS-12.jpg" />
+						<li data-thumb="images/featured/thumbs/nineA_T.jpg" data-src="images/featured/nineA_S.jpg">
+							<img src="images/featured/nineA_S.jpg" />
 						</li>
 					</ul>
 			</div>
@@ -48,6 +48,7 @@
 				$(document).ready(function() {
 					$('#imageGallery').lightSlider({
 						gallery:true,
+						adaptiveHeight: false,
 						item:1,
 						loop:true,
 						thumbItem:9,

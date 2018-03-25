@@ -40,18 +40,32 @@
 			
 				
 				<script>
+					var screenWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 					function initMap() {
 						var directionsService = new google.maps.DirectionsService;
 						var directionsDisplay = new google.maps.DirectionsRenderer;
 						var uluru = {lat: 41.222110, lng: -73.055670};
-						var map = new google.maps.Map(document.getElementById('map'), {
+						var mapObj;
+						var stdMapObj = {
 							zoom: 14,
 							center: uluru,
 							mapTypeControl: true,
 							mapTypeControlOptions: {
 								position: google.maps.ControlPosition.TOP_RIGHT
 							}
-						});
+						};
+						var mobileMapObj = {
+							zoom: 14,
+							center: uluru,
+							mapTypeControl: false,
+						};
+						if (screenWidth < 630) {
+							mapObj = mobileMapObj;
+						}
+						else {
+							mapObj = stdMapObj;
+						}
+						var map = new google.maps.Map(document.getElementById('map'), mapObj);
 						var marker_img = "/images/marker-icon.png"
 						var marker = new google.maps.Marker({
 							position: uluru,
@@ -98,16 +112,13 @@
 							infowindowContent.children['place-icon'].src = place.icon;
 							infowindowContent.children['place-name'].textContent = place.name;
 							infowindowContent.children['place-address'].textContent = address;
-							// infowindow.open(map, marker);
 							onChangeHandler(address);
-						});
-						
-						
-						
+						});				
 						var onChangeHandler = function(address) {
 							calculateAndDisplayRoute(directionsService, directionsDisplay, marker, map, address);
 						};
 					}
+					
 					function calculateAndDisplayRoute(directionsService, directionsDisplay, marker, map, address) {
 						var start = document.getElementById('pac-input').value;
 						if (start == '') {
@@ -125,15 +136,28 @@
 									var mapPanel = document.getElementById('map');
 									var directionsPanel = document.getElementById('right-panel');
 									var acInput = document.getElementById('pac-card');
-									mapPanel.style.float = 'left';
-									mapPanel.style.width = '50%';
-									directionsPanel.style.float = 'right';
-									directionsPanel.style.width = '50%';
-									directionsPanel.style.height = '400px';
-									directionsPanel.style.backgroundColor = 'inherit';
-									directionsPanel.style.overflow = 'auto';
-									acInput.style.width = '70%';
-									directionsDisplay.setDirections(response);
+									if (screenWidth < 630) {
+										// mapPanel.style.float = 'left';
+										// mapPanel.style.width = '50%';
+										// directionsPanel.style.float = 'right';
+										// directionsPanel.style.width = '50%';
+										// directionsPanel.style.height = '400px';
+										directionsPanel.style.backgroundColor = 'inherit';
+										directionsPanel.style.overflow = 'auto';
+										// acInput.style.width = '70%';
+										directionsDisplay.setDirections(response);
+									}
+									else {
+										mapPanel.style.float = 'left';
+										mapPanel.style.width = '50%';
+										directionsPanel.style.float = 'right';
+										directionsPanel.style.width = '50%';
+										directionsPanel.style.height = '400px';
+										directionsPanel.style.backgroundColor = 'inherit';
+										directionsPanel.style.overflow = 'auto';
+										acInput.style.width = '70%';
+										directionsDisplay.setDirections(response);
+									}
 								}
 								else {
 									window.alert('Directions request failed due to ' + status);

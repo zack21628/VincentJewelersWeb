@@ -134,7 +134,7 @@
     transition: border-radius 0.12s linear 0s 0.35s linear 0s;
 }
 .lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .lSSlideOuter .lSPager.lSGallery img {
     display: block;
@@ -170,11 +170,11 @@
 }
 .lSAction > .lSPrev {
     background-position: 0 0;
-    left: 10px;
+    left: 30px;
 }
 .lSAction > .lSNext {
     background-position: -32px 0;
-    right: 10px;
+    right: 30px;
 }
 .lSPrev , .lSNext  {
 	
