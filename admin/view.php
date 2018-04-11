@@ -19,56 +19,21 @@
 	$dbUser = 'root';
 	$dbPassword = '17Jamesadmin';
 	$db = 'vj db';
-	if (empty($_POST['username'])) {
-		die ("Username is empty.");
-	}
-	if (empty($_POST['password'])) {
-		die ("Password is empty.");
-	}
-	$username = $_POST['username'];
-	$password = $_POST['password'];
-	$username = stripslashes($username);
-	$password = stripslashes($password);
-	$username = htmlentities($username);
-	$password = htmlentities($password);
-	$password = md5($password);
-	
-	$conn = dbConnect($serverName, $dbUser, $dbPassword, $db);
-	$q = "SELECT id FROM users WHERE username='$username' AND password='$password'";
-	$result = $conn->query($q);
-	if ($result->num_rows == 1) {
-		$userId = $result->fetch_assoc()['id'];
-		echo 'Welcome!';
-		session_start();
-		$_SESSION['logged_in'] = true;
-	}
-	else {
-		die ("Wrong username or password.");
-	}
 ?>
 	<div id="page">
-		<div id="admin_menu">
-			<ul>
-				<li><a href="upload.php" >Upload</a></li>
-				<li><a href="view.php" >View Current Images</a></li>
-			</ul>
-		</div>
+		<?php
+			$conn = dbConnect($serverName, $dbUser, $dbPassword, $db);
+			$q = "SELECT * FROM galleryimages";
+			$result = $conn->query($q);
+			if ($result->num_rows > 0) {
+				while ($r = $result->fetch_assoc()) {
+					echo '<img src="data:image/jpeg;base64,'.base64_encode( $r['image'] ).'"/>';
+				}
+			}
+		?>
 	</div>
 	<script>
-		function readURL(input) {
-			if (input.files && input.files[0]) {
-				var reader = new FileReader();
-				reader.onload = function(e) {
-					$('#preview').attr('src', e.target.result);
-					$('#preview').attr( "style", "display: block");
-				}
-				reader.readAsDataURL(input.files[0]);
-			}
-		}
 		
-		$("#img_upload").change(function() {
-			readURL(this);
-		});
 	</script>
 </body>
 </html>
