@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `galleryimages` (
   `price` float(5,2) DEFAULT NULL,
   `in_stock` varchar(6) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+);
 
 --
 -- Dumping data for table `galleryimages`

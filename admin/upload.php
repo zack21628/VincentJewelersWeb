@@ -7,12 +7,17 @@
 				Name: <input type="text" name="image_name" class="text-inputs" /><br>
 				Caption: <input type="text" name="caption" class="text-inputs" /><br>
 				Description:  <textarea id="msg" name="description"></textarea><br>
-				Price: $<input type="number" min="0" max="10000" value="0.00" name="price" class="text-inputs" /><br>
+				Price: $<input type="number" step="0.01" min="0" max="10000" value="0.00" name="price" class="text-inputs" /><br>
 				Section:
-				<select name="section_name" class="text-inputs">
+				<select name="section_name" id="section_select" class="text-inputs">
 					<option value=""> </option>
-					<option value="Original Designs">Original Designs</option>
-				</select><br><br>
+				<?php
+					printSections();
+				?>
+				</select>
+				<button type="button" name="new_section" onclick=displayNewSection()>New Section</button>
+				<label for="new_section" id="new_section_label">Section: <input type="text" name="new_section" id="new_section" /></label><br>
+				<br><br>
 				In Stock: 
 				Yes: <input type="radio" name="in_stock" value="true" checked="checked"/> 
 				No: <input type="radio" name="in_stock" value="false"/><br>
@@ -43,6 +48,13 @@
 		$("#img_upload").change(function() {
 			readURL(this);
 		});
+		
+		function displayNewSection() {
+			ns = document.getElementById('new_section_label');
+			ss = document.getElementById('section_select');
+			ns.style.display = 'inline';
+			ss.value = '';
+		}
 	</script>
 </body>
 </html>

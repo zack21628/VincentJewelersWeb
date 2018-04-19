@@ -5,6 +5,7 @@
 <title>Vincent Jewelers of Miford,CT</title>
 <link rel="stylesheet" href="style-admin.css" type="text/css" />
 <link rel="shortcut icon" href="images/favicon.ico">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 <body>
 <?php
