@@ -1,4 +1,9 @@
 <?php 
+$serverName = 'localhost';
+$dbUser = 'root';
+$dbPassword = '17Jamesadmin';
+$db = 'vj db';
+
 function dbConnect($serverName, $dbUser, $dbPassword, $db){
 	$conn = new mysqli($serverName, $dbUser, $dbPassword, $db);
 	if ($conn->connect_errno) {
@@ -56,6 +61,7 @@ function getSections() {
 			array_push($sections, $r['section_name']);
 		}
 	}
+	$conn->close();
 	return $sections;
 }
 function printSections() {

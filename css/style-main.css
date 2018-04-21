@@ -47,6 +47,7 @@ body{
 	display: block ;
 	padding: 0 auto 10px ;
 	margin: 0 auto 10px ;
+	width: 100%;
 }
 #header #header_img{
 	display: block ;
@@ -54,39 +55,46 @@ body{
 	margin: auto ;
 	width: 80% ; 
 }
+@media only screen and (max-width: 849px) {
+	#header{
+		width: 80% ;
+	}
+}
 @media only screen and (max-width: 629px) {
 	#header {
 		background-color: none ;
 		float: none ;
 		width: 100% ;
 		padding: 0 1% ;
-		/* height: 75% ; */
 		height: 55px ;
 		margin: 0 ;
 	}
 	#header a#header_logo {
 		padding: 0 auto ;
-		/* padding-top: 5px;		 */
 		margin: 0 auto ; 
 		float: right;	
 		width: 80%;
-		
 	}
 	#header #header_img {
 		display: block ;
 		padding: 2% 2% ;
 		margin: auto ;
 		width: auto ; 
-		max-width: 285px;
-		height: 45px
+		max-width: 90%;
+		height: 100%;
 	}
 	#header .header_break {
 		display: none;
 	}
 }
-@media only screen and (max-width: 849px) {
-	#header{
-		width: 80% ;
+@media only screen and (max-width: 375px) {
+	#header #header_img {
+		max-width: 95%;
+		height: 45px;
+	}
+	#header a#header_logo {
+		display: block;
+		vertical-align: middle;
 	}
 }
 
@@ -125,10 +133,8 @@ body{
 	display: inline ;
 	height: 40px ;
 	line-height: 40px ;
-	/* border-bottom: 1px solid #888 ; */
 	margin-right: -4px ;
 	font-size: 100% ;
-	/* width: 10%; */
 }
 #nav a{
 	background-color: inherit ;
@@ -150,7 +156,7 @@ body{
 	#nav{
 		text-align: center ;
 		padding:0 2% ;
-		width: 95% ;
+		width: 80% ;
 		overflow:hidden ;
 		margin:0 auto ;
 		background:url(../images/bg-body.jpg) no-repeat;
@@ -159,6 +165,7 @@ body{
 
 @media only screen and (max-width: 629px) {
 	#nav{
+		display: block;
 		color: #000 ;
 		text-align: center ;
 		padding:0 ;
@@ -166,14 +173,13 @@ body{
 		margin: auto ;
 		background: none ;
 		float: left ;
-		width: 15% ;
-		/* height: 75% ; */
-		height: 55px; 
+		width: 17% ;
+		vertical-align: middle;
 	}
 	#nav .menu_wrapper{
 		width: 90% ;
-		height: 50px ;
-		margin-top: 5px;
+		padding: 5px 5px;
+		margin: 10px auto 0 ;
 	}
 	#nav .menu_icon{
 		display: block ;
@@ -182,13 +188,6 @@ body{
 		background-color: black ;
 		margin: 5px auto ;
 	}
-	#nav .menu_label{
-		margin: 0 auto;
-		display: inline-block ;
-		/* padding-bottom: 1px ; */
-		font-size:3.5vw;
-		width: 100% ;
-	}
 	#nav .nav_table{
 		background:url(../images/bg-body.jpg) ;
 		display: none ;
@@ -196,9 +195,9 @@ body{
 		margin: -5px 0 0 ;
 		padding: 0 0 2px ;
 		position: absolute ;
-		z-index: 100 ;
 		left: 5px ;
-		top: 100px;
+		top: 50px;
+		z-index: 100 ;
 		border: 3px outset green ;
 	}
 	#nav ul{
@@ -255,17 +254,17 @@ body{
 	padding:100px 0 0 ;
 	font-weight:normal ;
 }
-#main_content div#featured p, #main_content div#featured span{
-	width:100% ;
+#featured p, #featured span{
+	/* width:100% ; */
 	color:#5d5d5d ;
 	font-family: 'RokkittRegular' ;
 	font-size:16px ;
 	line-height:25px ;
 	text-shadow: 0 1px 0 #fcfcfc ;
-	text-align:justify ;
+	/* text-align:justify ; */
 	margin:0 ;
 }
-#main_content div#featured img.store-front{
+#featured img.store-front{
 	float: right ;
 	height: 50% ;
 	width: 50% ;
@@ -295,7 +294,7 @@ body{
 #main_content p{
 	font-family: 'RokkittRegular' ;
 	font-size:16px ;
-	text-align:justify ;
+	/* text-align:justify ; */
 	color:#636363 ;
 	margin:0 0 20px ;
 	line-height:21px ;
@@ -328,80 +327,72 @@ body{
 #footer{
 	width:60%	;
 	background:url(../images/bg-footer.jpg) no-repeat center top ;
-	padding:65px 10px 207px ;
+	padding:40px 10px 50px ;
 	margin:0 auto ;
 	overflow:hidden ;
 }
 @media only screen and (max-width: 849px) {
-	#footer{
+	#footer {
 		width: 80% ;
 	}
 }
-/*
-#footer ul{
-	list-style:none ;
-	margin:0 0 0 60px ;
-	padding:0 ;
-	overflow:hidden ;
-	float:left ;
-}
-#footer ul li:first-child a{
-	border:none ;
-	padding:0 6px 0 0 ;
-}
-#footer ul li{
-	float:left ;
-}
-#footer ul li a:hover{
-	color:#F78117 ;
-}
-#footer ul li a{
-	border-width: 1px ;
-	border-color:#5b5b5b ;
-	border-style: none none none solid ;
-	color:#5b5b5b ;
-	font-size:10px ;
+#copyright {
+	color: #5b5b5b ;
+	font-size: 10px ;
 	font-family: Trebuchet MS ;
-	text-decoration:none ;
-	font-weight:bold ;
-	padding:0 6px ;
-	outline:none ;
+	font-weight: bold ;
+	float: left ;
 }
-*/
-#footer p{
+.footer-info {
+	width: 30%;
+	padding: 0 10px;
+	margin: 0 ;
+	display: inline-block;
+	vertical-align: text-top;
 	color:#5b5b5b ;
-	font-size:10px ;
-	font-family: Trebuchet MS ;
-	font-weight:bold ;
-	float:left ;
-	margin:6px 0 0 135px ;
+	font-family: 'RokkittRegular' ;
 }
-#footer div.connect{
-	float:left ;
-	margin:0 0 0 92px ;
+#connect p {
+	font-size: 18px;
+	margin: 5px 5px;
+	font-weight: bold ;
 }
-#footer div.connect a{
-	float:left ;
-	outline:none ;
+#facebook img {
+	background:url(../images/FB-fLogo.png) no-repeat ;
 }
-#footer div.connect a img{
-	width:40px ;
-	height:40px ;
-	padding:0 20px ;
-	display:block ;
-	text-indent:-9999px ;
-	
-	/* background:url(../images/FB-fLogo.png) no-repeat ; */
+#instagram img {
+	background:url(../images/insta-logo.png) no-repeat ;
 }
-#footer div.connect a#instagram img{
-	width:40px ;
-	height:40px ;
-	display:block ;
-	text-indent:-9999px ;
-	/* background:url(../images/insta-logo.png) no-repeat ; */
+.social_media_links img{
+	width: 40px;
+	height: 40px;
+	margin: 5px 10px;
+}
+#store_info p {
+	margin: 1px 0;
+}
+#hours {
+	margin: 2px 0;
+	font-size: 18px;
+	font-weight: bold ;
+}
+#footer_location p{
+	margin: 10px 0;
+}
+#store_footer {
+	font-size: 18px;
+	font-weight: bold ;
+}
+#footer-loc-left {
+	float: left;
+}
+#footer-loc-right {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-top: 20px;
 }
 
-}
 /*------------------------- From Original Site ------------------------*/ 
 #innertube  {
 	text-align: center ;
@@ -465,39 +456,62 @@ img.expando3 {
 	width: 100%;
 }
 #floating-panel {
-	/* position: absolute; */
-	/* top: 10px; */
-	/* left: 25%; */
 	z-index: 5;
 	background-color: #fff;
 	padding: 5px;
 	border: 1px solid #999;
 	text-align: center;
-	/* font-family: 'Roboto','sans-serif'; */
 	line-height: 30px;
 	padding-left: 10px;
 }
-#location_info {
+.location_info {
 	text-align: center;
+	margin-bottom: 20px;
 }
-#location_info .sep {
+.location_info_container {
+	width: 100%;
+	display: table;
+}
+#featured .location_info .address_data {
+	display: table-cell;
+    vertical-align: bottom;
+	width: 50%;
+	font-size: 20px;
+}
+.location_info .parking {
+	margin-top: 10px;
 	display: inline;
-	margin: 0 20px;
+	font-size: 16px !important;
 }
-#location_info .address {
-	display: inline;
-}
-#location_info .address_data {
-	text-align: center	!important; 
-}
-#location_info .pin_img {
+.pin_img {
 	height: 20px;
 	width: 20px;
+	vertical-align: top;
 }
-#location_info .link_to_map{
+.link_to_map, .directions-link{
 	text-decoration: none;
+	color: #000;
 }
-
+a.directions-link:link {
+	color:#0000ff;
+}
+a.directions-link:visited {
+	color:#0000ff;
+}
+a.directions-link:hover {
+	color:#cca300;
+}
+.address {
+	text-shadow: 1px 1px #cca300 !important;
+}
+#pin-mouseover {
+	display: none;
+	position: absolute;
+	top: 215px;
+	left: 500px;
+	border: 1px solid #000;
+	background-color: #fff;
+}
 #description {
 	font-family: Roboto;
 	font-size: 15px;
@@ -526,8 +540,6 @@ img.expando3 {
 	font-family: Roboto;
 	width: 50%;
 	position: absolute;
-	/* top: 10px; */
-	/* left: 25%; */
 	z-index: 5;
 	background-color: #fff;
 	padding: 5px;
@@ -570,7 +582,11 @@ img.expando3 {
 		width: 75%;
 	}
 }
-
+@media only screen and (max-width: 420px) {
+	#featured .location_info .driving-directions {
+		font-size: 14px;
+	}
+}
 /*------------------------- Services ------------------------*/ 
 #main_content div#featured #service_list h2{
 	color: #000 ;
@@ -596,21 +612,21 @@ img.expando3 {
 
 
 /*------------------------- Gallery ------------------------*/ 
-* {
+#gallery * {
     box-sizing: border-box;
 }
 
-body {
-    background-color: #f1f1f1;
-    padding: 20px;
-    font-family: Arial;
-}
+/* body { */
+    /* background-color: #f1f1f1; */
+    /* padding: 20px; */
+    /* font-family: Arial; */
+/* } */
 
 /* Center website */
-.main {
-    max-width: 1000px;
-    margin: auto;
-}
+/* .main { */
+    /* max-width: 1000px; */
+    /* margin: auto; */
+/* } */
 
 #gal-title{
 	margin-bottom: 25px;
@@ -678,8 +694,18 @@ body {
 .content {
     background-color: white;
     padding: 10px;
+	height: 400px;
 }
+#gallery .content p {
+	margin: 0 5px;
+}
+#gallery .content h4 {
+	margin: 10px 0;
+}
+.gallery-image {
+	max-height : 300px;
 
+}
 /* The "show" class is added to the filtered elements */
 .show {
   display: block;

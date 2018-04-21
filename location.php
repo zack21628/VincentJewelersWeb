@@ -4,26 +4,23 @@
 	<script>$('.nav_table ul a:eq(4)').addClass("active")</script>
 		<div id="main_content">
 			<div id="featured">
-				<div id="location_info">
-					<p class="address address_data">
-						<a class="link_to_map" href="https://www.google.com/maps/place/23+New+Haven+Ave,+Milford,+CT+06460" target="_new">
-							<img class="pin_img" ="Click Pin to open in Google Maps" src="http://maps.google.com/mapfiles/ms/micons/red-dot.png" />
-						</a>
-						23 New Haven Ave., Milford, CT 06460
-					</p>
-					<div class="sep address_data"></div>
-					<span class="address_data"><a href="https://www.google.com/maps/place/23+New+Haven+Ave,+Milford,+CT+06460" target="_new" > Driving Directions</a> (Opens in a new window)</span>
-					<p class="address_data">Our location offers ample parking in downtown Milford. Just pull into the SBC Restaurant parking lot, and you'll see our store in the back.</p>
-				</div>
-				
-				
-				
-					<!-- <div id="floating-panel">
-						<b>Start: </b>
-						<input id="start" type="text">
-						<input id="pac-input" type="submit">
+				<div class="location_info">
+					<div class="location_info_container">
+						<span class="address address_data map-pin">
+							<a class="link_to_map" href="https://www.google.com/maps/place/23+New+Haven+Ave,+Milford,+CT+06460" target="_new">
+								<img class="pin_img"" src="/images/if_map_285662.png" />
+								23 New Haven Ave, Milford, CT 06460
+							</a>
+							<span id="pin-mouseover">Click here to open in Google Maps</span>
+							
+						</span>
+						<span class="address_data">
+							<a href="https://www.google.com/maps/place/23+New+Haven+Ave,+Milford,+CT+06460" target="_new" class="directions-link"> Driving Directions</a> 
+							<span class="driving-directions">(Opens in a new window)<span>
+						</span>
 					</div>
-					-->
+					<p class="address_data parking">Our location offers ample parking in downtown Milford. Just pull into the SBC Restaurant parking lot, and you'll see Vincent Jewelers in the back.</p>
+				</div>
 				<div class="pac-card" id="pac-card">
 					<div id="pac-container">
 						<input id="pac-input" type="text" placeholder="Enter a location">
@@ -36,10 +33,13 @@
 					<span id="place-name"  class="title"></span><br>
 					<span id="place-address"></span>
 				</div>
-			
-			
-				
 				<script>
+					$(".location_info_container .address").hover(function() {
+						$("#pin-mouseover").show();
+					}, function() {
+						$("#pin-mouseover").hide();
+					});
+				
 					var screenWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 					function initMap() {
 						var directionsService = new google.maps.DirectionsService;

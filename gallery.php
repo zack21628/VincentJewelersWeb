@@ -1,12 +1,60 @@
 <?php
 	include('header_new.php');
 ?>
-	<script>$('.nav_table ul a:eq(1)').addClass("active")</script>
+	<script>$('.nav_table ul a:eq(2)').addClass("active")</script>
 		<div id="main_content">
 			<div id="gallery">
 				<div id="gal-title">
 					<span>Our Jewelery</span>
 				</div>
+				<?php
+					$sections = getSections();
+					$selectionClasses = [];
+					$selectionBtns = '';
+					foreach ($sections as $s){
+						// $class = str_replace(' ', '', $s);
+						// array_push($selectionClasses, $class);
+						$selectionBtns .= '<button class="gallery-btn" onclick="filterSelection(\''.$s.'\')"> '.$s.'</button>';
+					}
+					echo '
+					<div id="myBtnContainer">
+						<button class="gallery-btn active" onclick="filterSelection(\'all\')"> Show all</button>'.
+						$selectionBtns . '
+					</div>
+					<!-- Portfolio Gallery Grid -->
+					<div class="row"> ';
+					
+					$conn = dbConnect($serverName, $dbUser, $dbPassword, $db);
+					$q = "SELECT * FROM galleryimages";
+					$result = $conn->query($q);
+					if ($result->num_rows > 0) {
+						$i = 0;
+						while ($r = $result->fetch_assoc()) {
+							$id = $r['id'];
+							$img = $r['image'];
+							$name = $r['name'];
+							$section = $r['section_name'];
+							$caption = $r['caption'];
+							$description = $r['description'];
+							$price = $r['price'];
+							$instock = $r['in_stock'];
+							echo '
+							<div class="column '.$section.'">
+								<div class="content">
+									<img src="data:image/jpeg;base64,'.base64_encode( $img ).'" alt="'.$name.'" style="width:100%" class="gallery-image">
+									<h4>'.$name.'</h4>
+									<p>'.$caption.'</p>
+									<p>$'.$price.'</p>
+								</div>
+							</div>
+							';
+						}
+					}
+					echo '
+					</div>
+					';
+				?>
+				<!--
 				<div id="myBtnContainer">
 					<button class="gallery-btn active" onclick="filterSelection('all')"> Show all</button>
 					<button class="gallery-btn" onclick="filterSelection('nature')"> Original Designs</button>
@@ -14,7 +62,6 @@
 					<button class="gallery-btn" onclick="filterSelection('people')"> Test 2</button>
 				</div>
 				
-				<!-- Portfolio Gallery Grid -->
 				<div class="row">
 				  <div class="column nature">
 					<div class="content">
@@ -81,8 +128,8 @@
 					  <p>Lorem ipsum dolor..</p>
 					</div>
 				  </div>
-				<!-- END GRID -->
 				</div>
+				-->
 			</div>
 		</div>
 		<script>

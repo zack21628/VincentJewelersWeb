@@ -20,12 +20,15 @@
 -->
 </head>
 <body>
+	<?php
+		include $_SERVER['DOCUMENT_ROOT'] . '/php-scripts/php-functions.php';
+	?>
 	<div id="page">
 		<div id="header">
 			<a href="index.php" id="header_logo"><img id="header_img" src="images/vincentjewelers.png" alt=""/></a>
 			<div id="nav">
 				<div class="menu_wrapper">
-					<span class="menu_label">Menu</span>
+					<!-- <span class="menu_label">Menu</span> -->
 					<div class="menu_icon"></div>
 					<div class="menu_icon"></div>
 					<div class="menu_icon"></div>
