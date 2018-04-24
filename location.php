@@ -15,11 +15,13 @@
 							
 						</span>
 						<span class="address_data">
-							<a href="https://www.google.com/maps/place/23+New+Haven+Ave,+Milford,+CT+06460" target="_new" class="directions-link"> Driving Directions</a> 
-							<span class="driving-directions">(Opens in a new window)<span>
+							<!-- <a href="https://www.google.com/maps/place/23+New+Haven+Ave,+Milford,+CT+06460" target="_new" class="directions-link"> Driving Directions</a> 
+							<span class="driving-directions">(Opens in a new window)<span> -->
+							<span class="phone-number">Call Us:&nbsp;&nbsp;(203) 882-8900<span>
 						</span>
 					</div>
-					<p class="address_data parking">Our location offers ample parking in downtown Milford. Just pull into the SBC Restaurant parking lot, and you'll see Vincent Jewelers in the back.</p>
+					<!-- <p class="phone-number">Call Us:&nbsp;&nbsp;(203) 882-8900</p> -->
+					<p id="parking-info">Our location offers ample parking in downtown Milford. Just pull into the SBC Restaurant parking lot, and you'll see Vincent Jewelers in the back.</p>
 				</div>
 				<div class="pac-card" id="pac-card">
 					<div id="pac-container">

@@ -40,6 +40,7 @@
 						<a class="nav_links" href="gallery.php"><li>Gallery</li></a>
 						<a class="nav_links" href="services.php"><li>Services</li></a>
 						<a class="nav_links" href="location.php"><li>Location</li></a>
+						<a class="nav_links" href="about.php"><li>About Us</li></a>
 						<!-- <a class="nav_links" href="index.html"><li>History</li></a> -->
 					</ul>
 				</div>
