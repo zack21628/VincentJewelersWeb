@@ -34,15 +34,12 @@
 					<div class="menu_icon"></div>
 				</div>
 				<div class="nav_table">
-					<ul>
-						<a class="nav_links" href="index.php"><li>Home</li></a>
-						<a class="nav_links" href="featured.php"><li>Featured Items</li></a>
-						<a class="nav_links" href="gallery.php"><li>Gallery</li></a>
-						<a class="nav_links" href="services.php"><li>Services</li></a>
-						<a class="nav_links" href="location.php"><li>Location</li></a>
-						<a class="nav_links" href="about.php"><li>About Us</li></a>
-						<!-- <a class="nav_links" href="index.html"><li>History</li></a> -->
-					</ul>
+					<a class="nav-links" href="index.php">Home</a>
+					<a class="nav-links" href="featured.php">Featured Items</a>
+					<a class="nav-links" href="gallery.php">Gallery</a>
+					<a class="nav-links" href="services.php">Services</a>
+					<a class="nav-links" href="location.php">Location</a>
+					<a class="nav-links" href="about.php">About Us</a>
 				</div>
 			</div>
 			<hr class="header_break"/>

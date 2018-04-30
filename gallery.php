@@ -1,7 +1,7 @@
 <?php
 	include('header_new.php');
 ?>
-	<script>$('.nav_table ul a:eq(2)').addClass("active")</script>
+	<script>$('.nav-links:eq(2)').addClass("active")</script>
 		<div id="main_content">
 			<div id="gallery">
 				<div id="gal-title">

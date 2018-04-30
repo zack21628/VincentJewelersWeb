@@ -12,7 +12,7 @@
 	$count = ($count_img < $count_thumbs) ? $count_img : $count_thumbs;
 	
 ?>
-	<script>$('.nav_table ul a:eq(1)').addClass("active")</script>
+	<script>$('.nav-links:eq(1)').addClass("active")</script>
 		<div id="main_content">
 			<div id="featured">
 				<div id="featured-slider" class="container">

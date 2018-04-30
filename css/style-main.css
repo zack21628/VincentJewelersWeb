@@ -9,7 +9,7 @@ html,body
   overflow-x: hidden ; 
 }
 
-@media only screen and (max-width: 629px) {
+@media only screen and (max-width: 649px) {
 	html, body{
 		width:100% ;
 		overflow-x: hidden ;
@@ -45,7 +45,7 @@ body{
 }
 #header a#header_logo{
 	display: block ;
-	padding: 0 auto 10px ;
+	/* padding: 0 auto 10px ; */
 	margin: 0 auto 10px ;
 	width: 100%;
 }
@@ -60,14 +60,16 @@ body{
 		width: 80% ;
 	}
 }
-@media only screen and (max-width: 629px) {
+@media only screen and (max-width: 649px) {
 	#header {
 		background-color: none ;
 		float: none ;
 		width: 100% ;
 		padding: 0 1% ;
-		height: 55px ;
+		min-height: 55px ;
+		max-height: 100px;
 		margin: 0 ;
+		display: block
 	}
 	#header a#header_logo {
 		padding: 0 auto ;
@@ -102,68 +104,52 @@ body{
 #nav{
 	color: #000 ;
 	padding:0 2% ;
-	width: 95% ;
 	overflow:hidden ;
 	margin:0 auto ;
 	background:url(../images/bg-body.jpg) no-repeat;
+	text-align: center;
 }
-#nav .menu_icon{
+#nav .menu_icon {
 	display: none ;
+}
+#nav .menu_wrapper {
+	/* display: none ; */
 }
 #nav .nav_table{
 	display: table ;  /* Allow the centering to work */
 	margin: 0 auto;
-	padding: 0 2.5% ;
-	width: 90% ;
-}
-#nav ul{
-	list-style: none ;
-	list-style-type: none;
-	text-align: center ;
-	padding: 0 ;
-	margin: 0 ;
+	/* padding: 0 2.5% ; */
 	width: 100% ;
-	white-space: nowrap;
+	overflow: hidden;
+	text-align: center;
 }
-#nav ul li{
-	display: inline ;
-	height: 40px ;
-	line-height: 40px ;
-	margin-right: -4px ;
-	font-size: 20px ;
-	text-shadow: 1px 1px #cca300;
-}
-#nav a{
+#nav .nav-links{
 	background-color: inherit ;
 	text-decoration: none ;
 	color: #000 ;
 	padding:0 2.5%;
 	transition: .4s background-color ;
+	text-align: center;
+	height: 40px ;
+	line-height: 40px ;
+	font-size: 18px ;
+	text-shadow: 1px 1px #cca300;
 }
-#nav a:hover {
+#nav .nav-links:hover {
 	color: #fff ;
 	background-color: #005f5f ;
 }
-#nav a.active {
+#nav .nav-links.active {
  background-color: #000 ;
  color: #fff ;
  cursor: default ;
 }
-@media only screen and (max-width: 849px) and (min-width: 630px){
-	#nav{
-		text-align: center ;
-		padding:0 2% ;
-		width: 80% ;
-		overflow:hidden ;
-		margin:0 auto ;
-		background:url(../images/bg-body.jpg) no-repeat;
-	}
-	#nav ul li {
+@media only screen and (max-width: 750px) and (min-width: 650px){
+	#nav .nav-links{
 		font-size: 16px ;
 	}
 }
-
-@media only screen and (max-width: 629px) {
+@media only screen and (max-width: 649px) {
 	#nav{
 		display: block;
 		color: #000 ;
@@ -174,7 +160,7 @@ body{
 		background: none ;
 		float: left ;
 		width: 17% ;
-		vertical-align: middle;
+		max-width: 80px;
 	}
 	#nav .menu_wrapper{
 		width: 90% ;
@@ -302,22 +288,21 @@ body{
 	outline:none ;
 	color:#636363 ;
 }
-@media only screen and (max-width: 849px) and (min-width: 630px){
+@media only screen and (max-width: 849px) and (min-width: 650px){
 	#main_content{
 		width: 80% ;
 	}
 }
-@media only screen and (max-width: 629px) {
+@media only screen and (max-width: 649px) {
 	#main_content{
 		float: right ;
-		width: 100% ;
-		padding: 5px 5px ;
+		width: 95% ;
+		padding: 5px 2.5% ;
 	}
 	#main_content div#featured {
 		margin: 0;
 		margin-bottom: 40px;
 		padding: 0 1%;
-		
 	}
 	#main_content div#featured h1 {
 		margin: 2% 2% ;
@@ -363,6 +348,9 @@ body{
 	float: right;
 	border-radius: 3px 0 0 3px;
 }
+#home-slider .prev {
+	float: left;
+}
 
 /* On hover, add a black background color with a little bit see-through */
 #home-slider .prev:hover, #home-slider .next:hover {
@@ -378,6 +366,7 @@ body{
 	bottom: 8px;
 	width: 100%;
 	text-align: center;
+	display: none;
 }
 
 /* Number text (1/3 etc) */
@@ -387,9 +376,13 @@ body{
 	padding: 8px 12px;
 	position: absolute;
 	top: 0;
+	display: none;
 }
 
 /* The dots/bullets/indicators */
+#dots-box {
+	margin: 10px 0 5px;
+}
 #dots-box .dot {
 	cursor: pointer;
 	height: 15px;
@@ -492,15 +485,12 @@ body{
 	float: left;
 }
 #footer-loc-right {
-	/* position: relative; */
-	/* top: 0; */
-	/* left: 0; */
 	float: right;
 	margin-top: 20px;
 }
 @media only screen and (max-width: 998px) {
 	#footer {
-		width: 80% ;
+		width: 90% ;
 	}
 	#footer .footer-info {
 		width: 30%;
@@ -513,6 +503,21 @@ body{
 		margin-top: 10px;
 	}	
 }
+@media only screen and (max-width: 649px) {
+	#footer {
+		width: 95%;
+		padding: 40px 5px 50px;
+	}
+	#footer .footer-info {
+		width: 25%;
+		padding: 0 5px;
+	}
+	#footer .footer-pin {
+		width: 64px ;
+		height: 64px ;
+	}
+}
+
 /*------------------------- From Original Site ------------------------*/ 
 #innertube  {
 	text-align: center ;
@@ -559,7 +564,7 @@ img.expando3 {
 	height: 50px;
 	width: 50px;
 }
-@media only screen and (max-width: 629px) {
+@media only screen and (max-width: 649px) {
 	.slider_wrapper   {
 		text-align: center;
 		padding: 10px 0 0;
@@ -703,7 +708,7 @@ a.directions-link:hover {
 	font-weight: 500;
 	padding: 6px 12px;
 }
-@media only screen and (max-width: 629px) {
+@media only screen and (max-width: 649px) {
 	.pac-card {
 		width: 75%;
 	}
