@@ -24,9 +24,7 @@
 	$result = $conn->query($q);
 	if ($result->num_rows == 1) {
 		$userId = $result->fetch_assoc()['id'];
-		echo 'Welcome!';
-		session_start();
-		$_SESSION['logged_in'] = true;
+		$_SESSION["logged_in"] = true;
 		header("HTTP/1.1 303 See Other");
         header("Location: http://$_SERVER[HTTP_HOST]/admin/manage.php");
         die();

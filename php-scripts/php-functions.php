@@ -64,6 +64,7 @@ function getSections() {
 	$conn->close();
 	return $sections;
 }
+
 function printSections() {
 	$sections = getSections();
 	foreach ($sections as $s){
@@ -71,4 +72,14 @@ function printSections() {
 	}
 }
 
+function checkLogin($s){
+	if (isset($s)) {
+		if ($s == false) {
+			die("You must be logged in");
+		}
+	}
+	else {
+		die("You must be logged in");
+	}
+}
 ?>

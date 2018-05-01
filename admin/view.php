@@ -1,5 +1,6 @@
 <?php
 	include ('admin_header.php');
+	checkLogin($_SESSION["logged_in"]);
 	
 	$serverName = 'localhost';
 	$dbUser = 'root';

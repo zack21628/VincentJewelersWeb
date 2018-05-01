@@ -1,5 +1,6 @@
 <?php
 	include ('admin_header.php');
+	checkLogin($_SESSION["logged_in"]);
 ?>
 	<div id="page">
 		<div id="admin_menu">
@@ -14,6 +15,7 @@
 			<ul>
 				<li><a href="upload.php" >Upload</a></li>
 				<li><a href="view.php" >View Current Images</a></li>
+				<li><a href="logout.php" >Logout</a></li>
 			</ul>
 		</div>
 	</div>

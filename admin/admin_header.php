@@ -10,5 +10,5 @@
 <body>
 <?php
 	include $_SERVER['DOCUMENT_ROOT'] . '/php-scripts/php-functions.php';
-
+	session_start();
 ?>
