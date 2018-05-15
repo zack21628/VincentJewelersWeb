@@ -24,7 +24,7 @@
 					<p id="store_footer"> Vincent Jewelers </p>
 					<p> 23 New Haven Ave 
 					<p>Milford, CT 06460</p>
-					<p>(203)882-8900</p>
+					<p>(203) 882-8900</p>
 				</div>
 			</div>
 			<br>

@@ -46,7 +46,7 @@
 					function initMap() {
 						var directionsService = new google.maps.DirectionsService;
 						var directionsDisplay = new google.maps.DirectionsRenderer;
-						var uluru = {lat: 41.222110, lng: -73.055670};
+						var uluru = {lat: 41.222116, lng: -73.05573};
 						var mapObj;
 						var stdMapObj = {
 							zoom: 14,

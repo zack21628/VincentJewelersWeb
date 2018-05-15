@@ -23,6 +23,9 @@ body{
 #page{
 	background:url(../images/bg-body.jpg) no-repeat center top;
 }
+* {
+	box-sizing: border-box;
+}
 
 /*------------------------- Font ------------------------*/ 
 @font-face {
@@ -423,6 +426,8 @@ body{
 	padding:40px 10px 50px ;
 	margin:0 auto ;
 	overflow:hidden ;
+	text-align: center;
+	font-size: 20px
 }
 #copyright {
 	color: #5b5b5b ;
@@ -432,7 +437,6 @@ body{
 	float: left ;
 }
 .footer-info {
-	/* width: 30%; */
 	padding: 0 10px;
 	margin: 0 ;
 	display: inline-block;
@@ -441,18 +445,17 @@ body{
 	font-family: 'RokkittRegular' ;
 }
 #connect {
-	width: 25%;
+	width: 20%;
 }
 #store_info {
-	width: 30%;
+	width: 20%;
 }
 #footer_location {
-	width: 40%;
+	width: 30%;
 }
-
 #connect p {
-	font-size: 18px;
-	margin: 5px 5px;
+	/* font-size: 18px; */
+	margin: 5px 5px 15px;
 	font-weight: bold ;
 }
 #facebook img {
@@ -471,22 +474,20 @@ body{
 }
 #hours {
 	margin: 2px 0;
-	font-size: 18px;
+	/* font-size: 18px; */
 	font-weight: bold ;
-}
-#footer_location p{
-	margin: 5px 0;
 }
 #store_footer {
-	font-size: 18px;
+	/* font-size: 18px; */
 	font-weight: bold ;
 }
-#footer-loc-left {
-	float: left;
+#footer_location div{
+	display: inline-block;
+	vertical-align: middle;
 }
-#footer-loc-right {
-	float: right;
-	margin-top: 20px;
+#footer_location p{
+	margin: 5px;
+	/* font-size: 20px */
 }
 @media only screen and (max-width: 998px) {
 	#footer {
@@ -549,33 +550,6 @@ img.expando3 {
 	vertical-align: top ; /*top aligns image, so mouse has less of a change of moving out of image while image is expanding*/
 	height: 100px ;
 	width: auto ;
-}
-
-/*------------------------- Featured Items ------------------------*/ 
-.slider_wrapper {
-	text-align: center;
-	padding: 10px 0 0;
-	margin: 0 auto;
-	max-width: 500px;
-	height: 500px ;
-	max-height: 500px;
-} 
-#featured .lSPager li a img {
-	height: 50px;
-	width: 50px;
-}
-@media only screen and (max-width: 649px) {
-	.slider_wrapper   {
-		text-align: center;
-		padding: 10px 0 0;
-		margin: 0 auto;
-		width: 100%; 
-	}
-	#featured .lSPager li a img {
-		display: block;
-		height: auto;
-		max-width: 100%;
-	}
 }
 
 /*------------------------- Location ------------------------*/ 
@@ -740,6 +714,20 @@ a.directions-link:hover {
 	padding: 0;
 }
 
+/*------------------------- About Us ------------------------*/ 
+#main_content div#featured #contact_info h2{
+	color: #000 ;
+	text-shadow: 2px 1px #cca300;
+	font-size:36px ;
+	font-family: 'RokkittRegular' ;
+	margin:0 0 30px ;
+	padding: 0 ;
+	font-weight:normal ;
+	margin:15px 0 0 ;
+	line-height:21px ;
+	text-align: center;
+}
+
 
 
 /*------------------------- Gallery ------------------------*/ 
@@ -838,7 +826,7 @@ a.directions-link:hover {
 	display: block;
 }
 
-/*------------------------- Featured2 ------------------------*/ 
+/*------------------------- Featured ------------------------*/ 
 #featured-slider * {
 	box-sizing: border-box;
 }
