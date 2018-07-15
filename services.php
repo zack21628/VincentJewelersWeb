@@ -11,6 +11,7 @@
 							<h3>Jewelry Repair</h3>
 						</li>
 					</ul>
+					<!-- add image to left side of text for each service -->
 					<p>Vincent Jewelers is a full service store, creating original design jewelry, making custom design jewelry, and stocking marketplace jewelry. I also do repairs and appraisals, offer advice and if so prompted, can blither mindless banter too.</p>
 					<p>I stock a wide variety of stones and can replace lost or damaged stones</p>
 					<ul>

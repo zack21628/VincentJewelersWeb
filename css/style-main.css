@@ -714,6 +714,10 @@ a.directions-link:hover {
 	padding: 0;
 }
 
+#service_list p {
+	margin: 0;
+}
+
 /*------------------------- About Us ------------------------*/ 
 #main_content div#featured #contact_info h2{
 	color: #000 ;
@@ -801,7 +805,8 @@ a.directions-link:hover {
 .content {
     background-color: white;
     padding: 10px;
-	height: 500px;
+	max-height: 500px;
+	min-height: 300px;
 	display: table;
 	width: 100%;
 }
